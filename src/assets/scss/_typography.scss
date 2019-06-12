@@ -1,0 +1,36 @@
+@mixin generateFontFace(
+  $font-name,
+  $font-type,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-name;
+    src: url($font-path+$font-name+'/'+to-lower-case($font-name)+'-'+$font-type+'.eot');
+    src: url($font-path+$font-name+'/'+to-lower-case($font-name)+'-'+$font-type+'.eot#iefix')
+        format('embedded-opentype'),
+      url($font-path+$font-name+'/'+to-lower-case($font-name)+'-'+$font-type+'.ttf')
+        format('truetype'),
+      url($font-path+$font-name+'/'+to-lower-case($font-name)+'-'+$font-type+'.woff')
+        format('woff');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+// Font awesome icon
+@font-face {
+  font-family: $font-awesome;
+  src: url($font-path+'font-awesome/fa-solid-900.eot');
+  src: url($font-path+'font-awesome/fa-solid-900.eot#iefix')
+      format('embedded-opentype'),
+    url($font-path+'font-awesome/fa-solid-900.ttf') format('truetype'),
+    url($font-path+'font-awesome/fa-solid-900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+// Primary font
+@include generateFontFace($font-primary, 'light', 100);
+@include generateFontFace($font-primary, 'regular', 400);
+@include generateFontFace($font-primary, 'bold', bold);

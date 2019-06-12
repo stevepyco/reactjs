@@ -1,0 +1,73 @@
+@import 'assets/scss/variables.scss';
+
+.card {
+  width: 100%;
+  margin: 0 auto 1.75rem;
+  &-wrapper {
+    background-color: $color-light;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  &-image {
+    width: 100%;
+    background-color: $color-foreground;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 0;
+    cursor: zoom-in;
+    overflow: hidden;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-bottom {
+    color: $color-gray;
+    flex: 0 0 20px;
+    margin-top: 10px;
+    .fa-paperclip {
+      font-size: $font-size-h6;
+    }
+  }
+  &-user {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    font-size: 0.875rem;
+    &__avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      overflow: hidden;
+      flex: 0 0 auto;
+      margin-right: 0.5em;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__name {
+      font-size: 1em;
+      color: $color-link;
+      flex: 1 0 0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}

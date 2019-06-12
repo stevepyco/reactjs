@@ -1,0 +1,87 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:all",
+    "airbnb-base",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/all",
+    "plugin:jest/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["react", "jest", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest/globals": true
+  },
+  "rules": {
+    "react/jsx-uses-vars": 1,
+    "react/jsx-uses-react": 1,
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-underscore-dangle": "off",
+    "max-len": "off",
+    "comma-dangle": "off",
+    "no-plusplus": "off",
+    "no-unused-vars": 1,
+    "react/self-closing-comp": "off",
+    "react/forbid-prop-types": "off",
+    "react/forbid-component-props": "off",
+    "react/forbid-foreign-prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/no-danger": "off",
+    "react/prefer-stateless-function": "off",
+    "react/no-multi-comp": "off",
+    "react/sort-comp": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/require-default-props": "off",
+    "react/require-optimization": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-sort-props": "off",
+    "react/jsx-max-depth": "off",
+    "react/no-set-state": "off",
+    "react/jsx-no-bind": "off",
+    "react/jsx-handler-names": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-did-update-set-state": "off",
+    "react/no-did-mount-set-state": "off",
+    "react/no-access-state-in-setstate": "off",
+    "no-param-reassign": "off",
+    "no-return-assign": "off",
+    "object-shorthand": "off",
+    "arrow-body-style": "off",
+    "no-confusing-arrow": "off",
+    "arrow-parens": "off",
+    "no-mixed-operators": "off",
+    "class-methods-use-this": "off",
+    "camelcase": "off",
+    "padded-blocks": 0,
+    "quotes": ["error", "single"]
+  }
+}

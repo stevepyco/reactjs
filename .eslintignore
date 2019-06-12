@@ -1,0 +1,5 @@
+src/registerServiceWorker.js
+config/
+sw.js
+worker.js
+scripts/

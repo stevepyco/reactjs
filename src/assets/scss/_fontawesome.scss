@@ -1,0 +1,9 @@
+@import 'fontawesome/variables';
+@import 'fontawesome/icons';
+
+.fa,
+.fas {
+  font-family: $font-awesome;
+  font-weight: 900;
+  font-style: normal;
+}

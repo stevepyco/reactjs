@@ -1,0 +1,67 @@
+$font-path: '../fonts/';
+$font-primary: 'Roboto-Condensed';
+$font-awesome: 'FontAwesome';
+
+// Font size
+$font-size-root: 16px;
+$font-size-body: 1rem;
+
+$font-size-h1: 6rem;
+$font-size-h2: 3.75rem;
+$font-size-h3: 3.125rem;
+$font-size-h4: 2.125rem;
+$font-size-h5: 2rem;
+$font-size-h6: 1.25rem;
+
+$font-size-m: 1.125rem;
+$font-size-s: 0.875rem;
+$font-size-xs: 0.75rem;
+
+// Opacity
+$opacity-high: 0.85;
+$opacity-medium: 0.65;
+$opacity-low: 0.35;
+
+/* ⋆ ✢ ✣ ✤ ✥ ✦ ✧ ✩ ✪ ✫ ✬ ✭ ✮ ✯ ✰ ★ */
+// Surface color
+$color-light: #fff !default;
+$color-dark: #000 !default;
+$color-gray: rgb(187, 187, 187) !default;
+$color-error: #d0021b !default;
+$color-foreground: rgb(244, 244, 244) !default;
+$color-link: rgb(84, 156, 200);
+
+// Dark color
+$color-dark-default: #000 !default;
+$color-dark-high: rgba(#000, $opacity-high) !default;
+$color-dark-medium: rgba(#000, $opacity-medium) !default;
+$color-dark-low: rgba(#000, $opacity-low) !default;
+
+// Light color
+$color-light-default: #000 !default;
+$color-light-high: rgba(#000, $opacity-high) !default;
+$color-light-medium: rgba(#000, $opacity-medium) !default;
+$color-light-low: rgba(#000, $opacity-low) !default;
+
+// Primary color
+$color-primary-900: #100534 !default;
+$color-primary-800: #1a174a !default;
+$color-primary-700: #212056 !default;
+$color-primary-600: #292860 !default;
+$color-primary-500: #2e2e67 !default;
+$color-primary-400: #494a7b !default;
+$color-primary-300: #666790 !default;
+$color-primary-200: #8f90af !default;
+$color-primary-100: #babccf !default;
+
+// Secondary color
+$color-secondary-900: #004e93 !default;
+$color-secondary-800: #006eb5 !default;
+$color-secondary-700: #007fc9 !default;
+$color-secondary-600: #0091dc !default;
+$color-secondary-500: #009feb !default;
+$color-secondary-400: #00adee !default;
+$color-secondary-300: #42bbf0 !default;
+$color-secondary-200: #7acef5 !default;
+$color-secondary-100: #afe2f9 !default;
+$color-secondary-50: #e0f4fd !default;
